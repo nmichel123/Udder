@@ -8,6 +8,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: black;
 }
 
 html {
@@ -28,7 +29,7 @@ code {
 }
 
 .leftPane {
-  background-color: aqua;
+  background-color: brown;
   height: 100%;
   width: 25%;
   float: left;
