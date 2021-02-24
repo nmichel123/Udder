@@ -11,13 +11,6 @@ body {
   background-color: black;
 }
 
-html {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  margin: 0; 
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,8 +21,18 @@ code {
   width: 100%;
 }
 
+html {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0; 
+}
+
+h1 {
+  color: white;
+}
+
 .leftPane {
-  background-color: brown;
   height: 100%;
   width: 25%;
   float: left;
