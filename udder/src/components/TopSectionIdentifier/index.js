@@ -1,14 +1,10 @@
 import React from 'react'
 import './style.css'
 
-class TopSectionIdentifier extends React.Component {
-    state = {
-        section: ""
-    };
-
-    handleSelect = () => {
-        this.setState ({ })
-    }
-}
+function TopSectionIdentifier () {
+    return (
+    <div className = "topIdentifier"></div>
+    )
+};
 
 export default TopSectionIdentifier
