@@ -1,8 +1,16 @@
+a:hover {
+    text-decoration: none;
+}
+
 .navLeftItem {
     font-size: 22px;
     font-weight: bold;
     color: white;
     margin: 20px
+}
+
+.navLeftItem:hover {
+    color: rgb(21, 199, 223);
 }
 
 .udderButton {
