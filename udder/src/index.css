@@ -1,14 +1,13 @@
 body {
-  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  width: 100%;
   margin: 0;
-  background-color: black;
+  width: 100%;
 }
 
 code {
@@ -24,8 +23,8 @@ code {
 html {
   background-color: black;
   height: 100%;
-  width: 100%;
   margin: 0; 
+  width: 100%;
 }
 
 h1 {
@@ -33,24 +32,24 @@ h1 {
 }
 
 .leftPane {
-  height: 100%;
-  width: 25%;
-  float: left;
   border-collapse: collapse;
+  float: left;
+  height: 100%;
+  padding-top: 40px;
+  width: 25%;
 }
 
 .middlePane {
   background-color: blueviolet;
+  border-collapse: collapse;
+  float: left;
   height: 100%;
   width: 50%;
-  float: left;
-  border-collapse: collapse;
 }
 
 .rightPane {
-  background-color: burlywood;
+  border-collapse: collapse;
+  float: right;
   height: 100%;
   width: 25%;
-  float: right;
-  border-collapse: collapse;
 }

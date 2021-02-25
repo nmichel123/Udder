@@ -1,0 +1,12 @@
+input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    margin-left: 60px;
+    outline: none;
+    width: 100%;
+}
+
+.searchRight {
+    padding-top: 10px;
+}
