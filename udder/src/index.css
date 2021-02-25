@@ -32,7 +32,6 @@ h1 {
 }
 
 .leftPane {
-  border-collapse: collapse;
   float: left;
   height: 100%;
   padding-top: 40px;
@@ -40,15 +39,12 @@ h1 {
 }
 
 .middlePane {
-  background-color: blueviolet;
-  border-collapse: collapse;
   float: left;
   height: 100%;
   width: 50%;
 }
 
 .rightPane {
-  border-collapse: collapse;
   float: right;
   height: 100%;
   width: 25%;

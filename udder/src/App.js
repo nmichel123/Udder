@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import NavLeft from './components/NavLeft'
 import SearchRight from './components/SearchRight'
+import TopSectionIdentifier from './components/TopSectionIdentifier'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <NavLeft/>
         </div>
         <div className = "middlePane">
-          <h1>Mids Pane</h1>
+          <TopSectionIdentifier/>
         </div>
         <div className = "rightPane">
           <SearchRight/>
