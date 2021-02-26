@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS 'udder';
+CREATE DATABASE 'udder';

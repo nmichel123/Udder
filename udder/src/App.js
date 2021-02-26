@@ -1,7 +1,9 @@
 import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
 import NavLeft from './components/NavLeft'
 import SearchRight from './components/SearchRight'
+import Home from './pages/Home'
 
 function App  () {
   return (
@@ -11,7 +13,10 @@ function App  () {
           <NavLeft/>
         </div>
         <div className = "middlePane">
-
+          <Home/>
+          {/* <Switch>
+            <Route exact path = "/" component={}/>
+          </Switch> */}
         </div>
         <div className = "rightPane">
           <SearchRight/>

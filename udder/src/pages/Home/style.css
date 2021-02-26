@@ -1,0 +1,17 @@
+h5 {
+    color: white;
+    font-weight: 900;
+    padding-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.homeHeader {
+    border: thin;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    border-top: transparent;
+    height: 20%;
+    padding-top: 20px;
+}
+
