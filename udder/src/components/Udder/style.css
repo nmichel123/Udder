@@ -1,8 +1,16 @@
-.udderSection {
+.udder {
+    background-color: brown;
     border: thin;
     border-color: rgb(54, 54, 54);
     border-style: solid;
     border-top: transparent;
-    height: 20%;
+    height: 100%;
+    padding-bottom: 50px;
     width: 100%;
+}
+
+.udderText {
+    height: 100px;
+    resize: none;
+    width: 85%;
 }

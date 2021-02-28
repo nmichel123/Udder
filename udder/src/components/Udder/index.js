@@ -3,8 +3,10 @@ import './style.css'
 
 function Udder () {
     return(
-        <div className = "udderSection">
+        <div className = "udder">
+            <input className = "udderText" type = "text" placeholder = " What's happening?">
 
+            </input>
         </div>
     )
 }
