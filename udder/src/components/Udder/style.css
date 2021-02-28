@@ -1,0 +1,8 @@
+.udderSection {
+    border: thin;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    border-top: transparent;
+    height: 20%;
+    width: 100%;
+}

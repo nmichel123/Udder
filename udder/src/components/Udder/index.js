@@ -3,7 +3,7 @@ import './style.css'
 
 function Udder () {
     return(
-        <div>
+        <div className = "udderSection">
 
         </div>
     )
