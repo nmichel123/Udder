@@ -1,5 +1,5 @@
 import React from 'react';
-import Udder from '../../components/Udder'
+import UdderHomePage from '../../components/UdderHomePage'
 import './style.css';
 
 function Home () {
@@ -9,7 +9,7 @@ function Home () {
             <h5>Home</h5>
         </div>
         <div className = "udderSection">
-            <Udder/>
+            <UdderHomePage/>
         </div>
         </div>
     );
