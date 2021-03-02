@@ -10,7 +10,8 @@
 }
 
 .udderText {
-    height: 100px;
+    height: 30px;
+    outline: none;
     resize: none;
     width: 85%;
 }
