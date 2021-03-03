@@ -1,5 +1,4 @@
 .udder {
-    background-color: brown;
     border: thin;
     border-color: rgb(54, 54, 54);
     border-style: solid;
@@ -10,9 +9,35 @@
 }
 
 .udderText {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
     height: 30px;
-    margin-left: 60px;
+    margin-left: 80px;
+    margin-top: 20px;
     outline: none;
     resize: none;
     width: 85%;
+}
+
+.udderButtonTiny {
+    background-color: rgb(21, 199, 223);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    outline: none;
+    padding: 7px 15px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.udderButtonTiny:hover {
+    background-color: rgb(17, 157, 175);
 }

@@ -16,9 +16,6 @@ class UdderHomePage extends React.Component {
         autosize(ta);
         ta.style.display = 'block';
         autosize.update(ta);
-        ta.addEventListener('autosize:resized', function() {
-        console.log('textarea height updated');
-        });
     }
 
     render() {
@@ -27,6 +24,7 @@ class UdderHomePage extends React.Component {
             <textarea onChange = {this.onChange} className = "udderText" placeholder = " What's happening?">
 
             </textarea>
+            <a href= "/udder"><button className = "udderButtonTiny"  style = {{outline: 'none'}}>Udder</button></a>
         </div>
     )
 
