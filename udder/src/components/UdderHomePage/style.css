@@ -1,3 +1,16 @@
+.adjustment {
+    padding-top: 17px;
+}
+
+.avi {
+    border-radius: 100%;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 15px;
+    position: absolute;
+    width: 55px;
+}
+
 .udder {
     border: thin;
     border-color: rgb(54, 54, 54);
@@ -16,7 +29,6 @@
     font-weight: 500;
     height: 30px;
     margin-left: 80px;
-    margin-top: 20px;
     outline: none;
     resize: none;
     width: 85%;
@@ -31,7 +43,7 @@
     float: right;
     font-size: 16px;
     font-weight: bold;
-    margin: 5px;
+    margin-right: 15px;
     outline: none;
     padding: 7px 15px;
     text-align: center;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css'
+import Blue from '../../assets/blue.jpeg'
 
 const autosize = require('autosize');
 
@@ -21,10 +22,16 @@ class UdderHomePage extends React.Component {
     render() {
     return(
         <div className = "udder">
+            <img src={Blue} alt="placeholderAvi" className = "avi"/>
+            <div className = "adjustment">
             <textarea onChange = {this.onChange} className = "udderText" placeholder = " What's happening?">
 
             </textarea>
+            </div>
+            <div className = "splitter"></div>
+            <div className = "buttonsGroup">
             <a href= "/udder"><button className = "udderButtonTiny"  style = {{outline: 'none'}}>Udder</button></a>
+            </div>
         </div>
     )
 
