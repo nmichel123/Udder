@@ -1,0 +1,8 @@
+.homeFeed {
+    border: thin;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    border-top: transparent;
+    height: 100%;
+    width: 100%;
+}

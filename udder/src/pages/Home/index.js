@@ -1,5 +1,6 @@
 import React from 'react';
 import UdderHomePage from '../../components/UdderHomePage'
+import HomeFeed from '../../components/HomeFeed'
 import './style.css';
 
 function Home () {
@@ -10,6 +11,9 @@ function Home () {
         </div>
         <div className = "udderSection">
             <UdderHomePage/>
+        </div>
+        <div className = "feedSection">
+            <HomeFeed/>
         </div>
         </div>
     );

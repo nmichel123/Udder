@@ -31,6 +31,8 @@ class UdderHomePage extends React.Component {
             <div className = "splitter"></div>
             <div className = "buttonsGroup">
             <a href= "/udder"><button className = "udderButtonTiny"  style = {{outline: 'none'}}>Udder</button></a>
+
+            
             </div>
         </div>
     )
