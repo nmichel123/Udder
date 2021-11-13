@@ -1,15 +1,24 @@
 const express = require ('express');
+const cors = require('cors');
 
-var app = express();
-var PORT = process.env.PORT || 8080
+const app = express();
 
-app.use(express.urlencoded({ extended: true }));
+const db = require('./src/models');
+db.sequelize.sync()
+
+var corsOptions = {
+    origin: 'http://localhost:8081'
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static("app/public"));
+app.get('/', (req, res) => {
+    res.json({ message: 'Welcome to the Farm. Udder.'})
+});
 
-// Require routes here once finished
-
-app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT)
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
 });
