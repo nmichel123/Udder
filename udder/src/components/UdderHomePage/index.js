@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css'
 import Blue from '../../assets/blue.jpeg'
+import autosize from 'autosize';
 
-const autosize = require('autosize');
 
 class UdderHomePage extends React.Component {
     constructor(props) {
@@ -17,7 +17,8 @@ class UdderHomePage extends React.Component {
         autosize(ta);
         ta.style.display = 'block';
         autosize.update(ta);
-    }
+    };
+    
 
     render() {
     return(
