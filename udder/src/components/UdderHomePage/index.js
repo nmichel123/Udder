@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 import Blue from '../../assets/blue.jpeg'
 import autosize from 'autosize';
+import UdderDataService from '../../services/udder.service'
 
 
 class UdderHomePage extends React.Component {
@@ -9,6 +10,15 @@ class UdderHomePage extends React.Component {
         super(props);
 
         this.onChange = this.onChange.bind(this);
+        this.sendUdder = this.sendUdder.bind(this)
+
+        this.state = {
+            id: null,
+            title: '',
+            description: '',
+            published: false,
+            submitted: false,
+        }
     }
 
     onChange () {
@@ -18,6 +28,12 @@ class UdderHomePage extends React.Component {
         ta.style.display = 'block';
         autosize.update(ta);
     };
+
+    // sendUdder() {
+    //     var data = {
+    //         title
+    //     }
+    // }
     
 
     render() {
