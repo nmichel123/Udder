@@ -1,7 +1,8 @@
 const dbConfig = require('../config/db.config');
 const Sequelize = require('sequelize');
 
-const { dialect } = require('../config/db.config');
+// const { dialect } = require('../config/db.config'); 
+// ^^ Above not required as long as dialect is declared below as shown
 
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,

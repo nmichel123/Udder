@@ -14,9 +14,6 @@ function App  () {
         </div>
         <div className = "middlePane">
           <Home/>
-          {/* <Switch>
-            <Route exact path = "/" component={}/>
-          </Switch> */}
         </div>
         <div className = "rightPane">
           <SearchRight/>
