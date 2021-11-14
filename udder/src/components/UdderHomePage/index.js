@@ -3,6 +3,7 @@ import './style.css'
 import Blue from '../../assets/blue.jpeg'
 import autosize from 'autosize';
 import UdderDataService from '../../services/udder.service'
+// import { response } from 'express';
 
 
 class UdderHomePage extends React.Component {
@@ -29,12 +30,26 @@ class UdderHomePage extends React.Component {
         autosize.update(ta);
     };
 
-    // sendUdder() {
-    //     var data = {
-    //         title
-    //     }
-    // }
-    
+    sendUdder() {
+        var data = {
+            title: this.state.title,
+        }
+
+        UdderDataService.create(data)
+            .then(response => {
+                this.setState({
+                    id:response.data.id,
+                    title:response.data.title,
+                    published: response.data.published,
+
+                    submitted: true
+                });
+                console.log(response.data);
+            })
+            .catch(e => {
+                console.log(e);
+            });
+    }
 
     render() {
     return(
@@ -47,7 +62,7 @@ class UdderHomePage extends React.Component {
             </div>
             <div className = "splitter"></div>
             <div className = "buttonsGroup">
-            <a href= "/udder"><button className = "udderButtonTiny"  style = {{outline: 'none'}}>Udder</button></a>
+            <a href= "/udder"><button className = "udderButtonTiny" onClick = {this.sendUdder} style = {{outline: 'none'}}>Udder</button></a>
 
             
             </div>
