@@ -32,7 +32,7 @@ exports.deleteAll = (req, res) => {
 
 };
 
-// Find all published Tickets
+// Find all published Udders
 exports.findAllPublished = (req, res) => {
 
 };
