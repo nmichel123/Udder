@@ -15,10 +15,7 @@ class UdderHomePage extends React.Component {
 
         this.state = {
             id: null,
-            title: '',
-            description: '',
-            published: false,
-            submitted: false,
+            udder: ''
         }
     }
 
@@ -32,17 +29,14 @@ class UdderHomePage extends React.Component {
 
     sendUdder() {
         var data = {
-            title: this.state.title,
+            udder: this.state.udder,
         }
 
         UdderDataService.create(data)
             .then(response => {
                 this.setState({
                     id:response.data.id,
-                    title:response.data.title,
-                    published: response.data.published,
-
-                    submitted: true
+                    udder:response.data.udder
                 });
                 console.log(response.data);
             })
