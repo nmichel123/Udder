@@ -19,12 +19,15 @@ class UdderHomePage extends React.Component {
         }
     }
 
-    onChange () {
+    onChange (e) {
         var ta = document.querySelector('textarea');
         ta.style.display = 'none';
         autosize(ta);
         ta.style.display = 'block';
         autosize.update(ta);
+        this.setState({
+            udder: e.target.value
+        })
     };
 
     sendUdder() {
@@ -43,6 +46,13 @@ class UdderHomePage extends React.Component {
             .catch(e => {
                 console.log(e);
             });
+    }
+
+    newUdder() {
+        this.setState({
+            id:null,
+            udder:""
+        });
     }
 
     render() {
