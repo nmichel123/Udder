@@ -14,9 +14,11 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to the Farm. Udder.'})
-});
+app.get('/', function (req, res) {
+    res.send("Udder. Welcome to the Farm. Moo.")
+})
+
+require('../udder/src/routes/udder.routes')(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

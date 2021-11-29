@@ -18,7 +18,7 @@ class UdderDataService {
     }
 
     delete(id) {
-        return http.delete(`/udders`);
+        return http.delete(`/udders/${id}`);
     }
 
     deleteAll() {
