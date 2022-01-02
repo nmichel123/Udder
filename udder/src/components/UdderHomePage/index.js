@@ -3,7 +3,7 @@ import './style.css'
 import Blue from '../../assets/blue.jpeg'
 import autosize from 'autosize';
 import UdderDataService from '../../services/udder.service'
-// import { response } from 'express';
+// import { response } from 'express'; //Add in later
 
 
 class UdderHomePage extends React.Component {
