@@ -1,5 +1,5 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 import './index.css';
 import NavLeft from './components/NavLeft'
 import SearchRight from './components/SearchRight'
@@ -7,6 +7,7 @@ import Home from './pages/Home'
 
 function App  () {
   return (
+    <BrowserRouter>
     <div className="App">
       <div className="container">
         <div className = "leftPane">
@@ -20,6 +21,7 @@ function App  () {
         </div>
       </div>
     </div>
+    </BrowserRouter>
   );
   }
 
