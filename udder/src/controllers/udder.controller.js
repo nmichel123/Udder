@@ -4,6 +4,26 @@ const Op = db.Sequelize.Op
 
 // Create & Save new Udders
 exports.create = (req, res) => {
+    //NODE JS PROGRAM EMPTY PUT IT HERE
+    if (!req.body.title) {
+        res.status(400).send({
+            message: 'sry doesnt work'
+        });
+        return
+    }
+
+    const udder = {
+        Udder.create(udder)
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                err.message || "You screwed up! It's your fault!"
+            });
+        })
+    }
 
 };
 
