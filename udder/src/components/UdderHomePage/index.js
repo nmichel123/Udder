@@ -56,7 +56,6 @@ class UdderHomePage extends React.Component {
     }
 
     render() {
-    const {udder, sendUdder} = this.state; // Implement Render method HERE
     return(
         <div className = "udder">
             <img src={Blue} alt="placeholderAvi" className = "avi"/>
