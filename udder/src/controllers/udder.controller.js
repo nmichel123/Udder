@@ -120,10 +120,31 @@ exports.delete = (req, res) => {
 
 // Delete all Udders from the database 
 exports.deleteAll = (req, res) => {
-    
+    Udder.destroy({
+        where: {},
+        truncate: false
+    })
+        .then(nums => {
+            res.send({ message: `${nums} Udders deleted successfully. Coward.`})
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || 'Something went wrong deleting the udders. Youre still a coward'
+            });
+        });
 };
 
 // Find all published Udders
 exports.findAllPublished = (req, res) => {
-
+    Udder.findAll({ where: { published: true } })
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || `Couldn't find em all. Sucks. Our bad.`
+            });
+        });
 };
