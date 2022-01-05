@@ -70,17 +70,57 @@ exports.findOne = (req, res) => {
 
 // Update an Udder by ID in the request
 exports.update = (req, res) => {
+    const id = req.params.id;
 
+    Udder.update(req.body, {
+        where: { id : id }
+    })
+    .then(num => {
+        if(num === 1 ) {
+            res.send({
+                message: "Udder updated successfully"
+            });
+        } else {
+            res.send({
+                message: `Oops. Can't update that specific Udder. The one numbered ${id}. Too bad.`
+            });
+        }
+    })
+    .catch(err => {
+        res.status(500).send({
+            message: `Big error updating Udder. This one to be exact ${id}`
+        });
+    });
 };
 
 // Delete an Udder with the specified ID in the request 
 exports.delete = (req, res) => {
+    const id =  req.params.id;
 
+    Udder.destroy({
+        where: { id : id }
+    })
+    .then(num => {
+        if (num === 1) {
+            res.send({
+                message: 'Udder deleted! Coward!'
+            });
+        } else {
+            res.send({
+                message: `Can't deleted this specific one. This one ${id}. You're a coward for trying!`
+            });
+        }
+    })
+    .catch(err => {
+        res.status(500).send({
+            message: `Can't get rid of that Udder. This one ${id} coward.`
+        })
+    })
 };
 
 // Delete all Udders from the database 
 exports.deleteAll = (req, res) => {
-
+    
 };
 
 // Find all published Udders
