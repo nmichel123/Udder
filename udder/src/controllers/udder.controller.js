@@ -13,6 +13,9 @@ exports.create = (req, res) => {
     }
 
     const udder = {
+        title: req.body.title,
+        published: req.body.published ? req.body.published: false
+    };
         Udder.create(udder)
         .then(data => {
             res.send(data);
@@ -23,12 +26,23 @@ exports.create = (req, res) => {
                 err.message || "You screwed up! It's your fault!"
             });
         })
-    }
-
 };
 
 // Retrieve all Udders
 exports.findAll = (req, res) => {
+    const title = req.query.title;
+    var condition = title ? { title: {[Op.like]: `%${title}%` } } : null;
+
+    Udder.findAll({ where: condition })
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                err.message || "You screwed up! It's your fault! Can't retrieve udders"
+            });
+        });
 
 };
 
