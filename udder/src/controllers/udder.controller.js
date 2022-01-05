@@ -4,7 +4,7 @@ const Op = db.Sequelize.Op
 
 // Create & Save new Udders
 exports.create = (req, res) => {
-    //NODE JS PROGRAM EMPTY PUT IT HERE
+
     if (!req.body.title) {
         res.status(400).send({
             message: 'sry doesnt work'
@@ -48,6 +48,23 @@ exports.findAll = (req, res) => {
 
 // Find a single Udder with an ID
 exports.findOne = (req, res) => {
+    const id = req.params.id;
+
+    Udder.findByOne(id)
+        .then(data => {
+            if(data) {
+                res.send(data);
+            } else {
+                res.status(404).send({
+                    message: `Can't find the Udder you're looking for. This one ${id}.`
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: 'You screwed up! Cant find that specific udder' + id
+            })
+        })
 
 };
 
