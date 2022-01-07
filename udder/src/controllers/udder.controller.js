@@ -4,7 +4,8 @@ const Op = db.Sequelize.Op
 
 // Create & Save new Udders
 exports.create = (req, res) => {
-
+    //Request is not being validated correctly. Error lies somewhere in the 
+    //.body part or some other issue that comes in with rq validation
     if (!req.body.udder) {
         res.status(400).send({
             message: 'sry doesnt work'
