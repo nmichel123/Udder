@@ -148,3 +148,5 @@ exports.findAllPublished = (req, res) => {
             });
         });
 };
+
+//Make sure to restart server after big changes
