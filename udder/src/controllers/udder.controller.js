@@ -5,7 +5,7 @@ const Op = db.Sequelize.Op
 // Create & Save new Udders
 exports.create = (req, res) => {
 
-    if (!req.body.title) {
+    if (!req.body.udder) {
         res.status(400).send({
             message: 'sry doesnt work'
         });
@@ -13,7 +13,7 @@ exports.create = (req, res) => {
     }
 
     const udder = {
-        title: req.body.title,
+        udder: req.body.udder,
         published: req.body.published ? req.body.published: false
     };
         Udder.create(udder)

@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Udder = sequelize.define('udder', {
+    const Udder = sequelize.define('udders', {
         udder: {
             type: Sequelize.STRING
         },
