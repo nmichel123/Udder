@@ -6,6 +6,7 @@ const Op = db.Sequelize.Op
 exports.create = (req, res) => {
     //Request is not being validated correctly. Error lies somewhere in the 
     //.body part or some other issue that comes in with rq validation
+    // Change backend to accept incoming requests & look for errors in CORS as well
     if (!req.body.udder) {
         res.status(400).send({
             message: 'sry doesnt work'
