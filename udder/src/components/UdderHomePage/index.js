@@ -61,7 +61,7 @@ class UdderHomePage extends React.Component {
             <img src={Blue} alt="placeholderAvi" className = "avi"/>
             <div className = "adjustment">
             <textarea onChange = {this.onChange} className = "udderText" placeholder = " What's happening?">
-
+                
             </textarea>
             </div>
             <div className = "splitter"></div>
@@ -76,6 +76,6 @@ class UdderHomePage extends React.Component {
     };
     
 }
-
+//Maybe need to add something like CreateNewUdder? What is missing....
 
 export default UdderHomePage
