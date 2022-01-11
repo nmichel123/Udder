@@ -5,5 +5,5 @@ module.exports = (sequelize, Sequelize) => {
         },
     });
 
-    return Udder
+    return Udder;
 }
