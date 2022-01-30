@@ -9,7 +9,7 @@ class HomeFeed extends Component {
         this.state = {
             udders: [],
             currentUdder: null,
-            currentIndex: -1
+            currentIndex: 1
         };
     }
 
@@ -34,7 +34,7 @@ class HomeFeed extends Component {
         this.retrieveUdders();
         this.setState({
             currentUdder: null,
-            currentIndex: -1
+            currentIndex: 1
         });
     }
 
@@ -53,11 +53,11 @@ class HomeFeed extends Component {
     return (
         <div className = "homeFeed">
             <div>
-                <h3>Udders</h3>
+                <h5>Udders</h5>
 
                 <ul className='uddersList'>
                     {udders && 
-                    udders.map((udder, index) => (
+                    udders.reverse().map((udder, index) => (
                         <li className={ 
                             'uddersListItem' + 
                             (index === currentIndex ? 'active': '')

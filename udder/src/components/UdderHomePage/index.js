@@ -3,7 +3,6 @@ import './style.css'
 import Blue from '../../assets/blue.jpeg'
 import autosize from 'autosize';
 import UdderDataService from '../../services/udder.service'
-// import { response } from 'express'; //Add in later
 
 
 class UdderHomePage extends React.Component {
@@ -76,6 +75,5 @@ class UdderHomePage extends React.Component {
     };
     
 }
-//Maybe need to add something like CreateNewUdder? What is missing....
 
 export default UdderHomePage
