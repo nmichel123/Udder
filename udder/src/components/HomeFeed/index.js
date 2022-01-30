@@ -48,25 +48,20 @@ class HomeFeed extends Component {
 
 
     render() {
-        const { udders, currentIndex } = this.state;
+        const { udders } = this.state;
 
     return (
         <div className = "homeFeed">
-            <div>
+            <div className = "uddersTitle">
                 <h5>Udders</h5>
 
                 <ul className='uddersList'>
-                    {udders && 
-                    udders.reverse().map((udder, index) => (
-                        <li className={ 
-                            'uddersListItem' + 
-                            (index === currentIndex ? 'active': '')
-                        }
-                        onClick={() => this.setActiveUdder(udder, index)}
-                        key={index}
-                        >
+                    { udders && udders.reverse().map((udder) => (
+
+                        <li className={'uddersListItem'}>
                         {udder.udder}
                         </li>
+
                     ))}
                 </ul>
             </div>
