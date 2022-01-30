@@ -6,6 +6,11 @@ class HomeFeed extends Component {
     constructor(props) {
         super(props);
         this.retrieveUdders = this.retrieveUdders.bind(this);
+        this.state = {
+            udders: [],
+            currentUdder: null,
+            currentIndex: -1
+        };
     }
 
     componentDidMount() {
@@ -23,6 +28,14 @@ class HomeFeed extends Component {
             .catch(e => {
                 console.log(e);
             })
+    }
+
+    refreshList() {
+        this.retrieveUdders();
+        this.setState({
+            currentUdder: null,
+            currentIndex: -1
+        })
     }
 
 
