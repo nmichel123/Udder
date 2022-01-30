@@ -25,8 +25,8 @@ class UdderDataService {
         return http.delete(`/udders`);
     }
 
-    findByTitle(title) {
-        return http.get(`/udders?title=${title}`);
+    findByUdder(udder) {
+        return http.get(`/udders?udder=${udder}`);
     }
     
 }
