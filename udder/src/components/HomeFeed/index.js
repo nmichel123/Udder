@@ -35,14 +35,41 @@ class HomeFeed extends Component {
         this.setState({
             currentUdder: null,
             currentIndex: -1
-        })
+        });
+    }
+
+    setActiveUdder(udder, index) {
+        this.setState({
+            currentUdder: udder,
+            currentIndex: index
+        });
     }
 
 
 
     render() {
+        const { udders, currentIndex } = this.state;
+
     return (
         <div className = "homeFeed">
+            <div>
+                <h3>Udders</h3>
+
+                <ul className='uddersList'>
+                    {udders && 
+                    udders.map((udder, index) => (
+                        <li className={ 
+                            'uddersListItem' + 
+                            (index === currentIndex ? 'active': '')
+                        }
+                        onClick={() => this.setActiveUdder(udder, index)}
+                        key={index}
+                        >
+                        {udder.udder}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
     }
