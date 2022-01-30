@@ -28,6 +28,7 @@ class UdderDataService {
     findByTitle(title) {
         return http.get(`/udders?title=${title}`);
     }
+    
 }
 
 export default new UdderDataService();

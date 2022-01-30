@@ -4,9 +4,7 @@ const Op = db.Sequelize.Op
 
 // Create & Save new Udders
 exports.create = (req, res) => {
-    //Request is not being validated correctly. Error lies somewhere in the 
-    //.body part or some other issue that comes in with rq validation
-    // Change backend to accept incoming requests & look for errors in CORS as well
+
     if (!req.body.udder) {
         res.status(400).send({
             message: 'sry doesnt work'
@@ -32,8 +30,8 @@ exports.create = (req, res) => {
 
 // Retrieve all Udders
 exports.findAll = (req, res) => {
-    const title = req.query.title;
-    var condition = title ? { title: {[Op.like]: `%${title}%` } } : null;
+    const udder = req.query.udder;
+    var condition = udder ? { udder: {[Op.like]: `%${udder}%` } } : null;
 
     Udder.findAll({ where: condition })
         .then(data => {
