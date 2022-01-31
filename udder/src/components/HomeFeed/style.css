@@ -15,7 +15,8 @@ ul li.uddersListItem{
     border: thin;
     border-color: rgb(54, 54, 54);
     border-style: solid;
-    height: auto;
+    font-size: medium;
+    font-weight: 425;
 }
 
 .homeFeed {
