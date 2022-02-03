@@ -15,10 +15,10 @@ ul li.uddersListItem{
     border: thin;
     border-color: rgb(54, 54, 54);
     border-style: solid;
-    font-size: medium;
+    font-size: 15px;
     font-weight: 425;
-    font-family: cursive;
-    height:40px;
+    height: auto;
+    padding-left: 40px;
 }
 
 .homeFeed {
