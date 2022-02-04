@@ -53,3 +53,6 @@
 .udderButtonTiny:hover {
     background-color: rgb(17, 157, 175);
 }
+
+@media only screen and (min-width: 1024px) {
+}

@@ -49,3 +49,6 @@ h1 {
   height: 100%;
   width: 25%;
 }
+
+@media only screen and (min-width: 1024px) {
+}
