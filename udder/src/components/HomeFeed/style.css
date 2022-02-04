@@ -6,10 +6,12 @@ h5 {
 }
 
 ul {
+    display: contents;
     list-style-type: none;
     padding: 0;
     margin: 0;
     overflow: auto;
+    white-space: nowrap;
 }
 
 ul li.uddersListItem{
@@ -19,11 +21,12 @@ ul li.uddersListItem{
     font-size: 15px;
     font-weight: 425;
     height: auto;
-    justify-content: space-around;
     overflow: auto;
     padding-left: 90px;
     padding-top: 30px;
     padding-bottom: 30px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .homeFeed {
