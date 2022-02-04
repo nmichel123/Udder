@@ -6,7 +6,8 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     color: white;
-    margin: 20px
+    margin: 20px;
+    overflow: hidden;
 }
 
 .navLeftItem:hover {

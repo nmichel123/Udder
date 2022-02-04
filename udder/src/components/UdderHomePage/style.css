@@ -17,6 +17,7 @@
     border-style: solid;
     border-top: transparent;
     height: 100%;
+    overflow: auto;
     padding-bottom: 50px;
     width: 100%;
 }
@@ -30,6 +31,7 @@
     height: 30px;
     margin-left: 80px;
     outline: none;
+    overflow: auto;
     resize: none;
     width: 83%;
 }

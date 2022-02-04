@@ -9,6 +9,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    overflow: auto;
 }
 
 ul li.uddersListItem{
@@ -18,8 +19,11 @@ ul li.uddersListItem{
     font-size: 15px;
     font-weight: 425;
     height: auto;
+    justify-content: space-around;
+    overflow: auto;
     padding-left: 90px;
-    padding-right: -60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .homeFeed {
