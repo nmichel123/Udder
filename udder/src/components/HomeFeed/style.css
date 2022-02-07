@@ -23,6 +23,7 @@ ul li.uddersListItem{
     height: auto;
     overflow: auto;
     padding-left: 90px;
+    padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
     white-space: normal;
