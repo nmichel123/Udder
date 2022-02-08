@@ -71,3 +71,5 @@ class HomeFeed extends Component {
 }
 
 export default HomeFeed
+
+// Add news API on the side to mimic twitter better 

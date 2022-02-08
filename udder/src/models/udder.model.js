@@ -7,3 +7,5 @@ module.exports = (sequelize, Sequelize) => {
 
     return Udder;
 }
+
+// Experiment with BLOB for passing user avi into the udders 
