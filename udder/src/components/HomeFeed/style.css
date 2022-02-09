@@ -35,6 +35,7 @@ ul li.uddersListItem{
     border-color: rgb(54, 54, 54);
     border-style: solid;
     border-top: transparent;
+    float: inline-start;
     height: 100%;
     width: 100%;
 }
