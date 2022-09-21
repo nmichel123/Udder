@@ -3,9 +3,9 @@ module.exports = (sequelize, Sequelize) => {
         udder: {
             type: Sequelize.STRING
         },
-        avi: {
-            type: Sequelize.IMAGE
-        }
+        // avi: {
+        //     type: Sequelize.IMAGE
+        // }
     });
 
     return Udder;
