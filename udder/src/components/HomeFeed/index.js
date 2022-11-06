@@ -3,6 +3,9 @@ import UdderDataService from '../../services/udder.service'
 import './style.css'
 
 class HomeFeed extends Component {
+    
+    //Constructor to manage state of the home feed
+    
     constructor(props) {
         super(props);
         this.retrieveUdders = this.retrieveUdders.bind(this);
@@ -12,6 +15,8 @@ class HomeFeed extends Component {
             currentIndex: 1
         };
     }
+
+    //Function to retrieve data on mount & select udder data
 
     componentDidMount() {
         this.retrieveUdders(); 
@@ -30,6 +35,8 @@ class HomeFeed extends Component {
             })
     }
 
+    //Function to refresh udder list once a new one is added
+
     refreshList() {
         this.retrieveUdders();
         this.setState({
@@ -38,12 +45,14 @@ class HomeFeed extends Component {
         });
     }
 
-    setActiveUdder(udder, index) {
-        this.setState({
-            currentUdder: udder,
-            currentIndex: index
-        });
-    }
+    //Function to set udder as active once they are able to be interacted with
+
+    // setActiveUdder(udder, index) {
+    //     this.setState({
+    //         currentUdder: udder,
+    //         currentIndex: index
+    //     });
+    // }
 
 
 

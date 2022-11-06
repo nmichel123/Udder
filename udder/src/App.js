@@ -4,6 +4,7 @@ import NavLeft from './components/NavLeft'
 import SearchRight from './components/SearchRight'
 import Home from './pages/Home'
 import WhatsHappeningPanel from './components/WhatsHappeningPanel';
+import NewsFeed from './components/NewsFeed';
 
 function App  () {
   return (
@@ -18,6 +19,7 @@ function App  () {
         <div className = "rightPane">
           <SearchRight/>
           <WhatsHappeningPanel/>
+          <NewsFeed/>
         </div>
       </div>
     </div>
