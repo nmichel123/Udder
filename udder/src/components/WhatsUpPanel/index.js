@@ -1,1 +1,0 @@
-//Here integrate a news API & format with CSS to display on the right panel 

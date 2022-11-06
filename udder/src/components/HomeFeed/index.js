@@ -1,3 +1,5 @@
+
+
 import React, {Component} from 'react'
 import UdderDataService from '../../services/udder.service'
 import './style.css'
@@ -52,8 +54,6 @@ class HomeFeed extends Component {
 
     return (
         <div className = "homeFeed">
-            <div className = "uddersTitle">
-                <h5>Udders</h5>
 
                 <ul className='uddersList'>
                     { udders && udders.reverse().map((udder) => (
@@ -64,12 +64,9 @@ class HomeFeed extends Component {
 
                     ))}
                 </ul>
-            </div>
         </div>
     )
     }
 }
 
 export default HomeFeed
-
-// Add news API on the side to mimic twitter better 

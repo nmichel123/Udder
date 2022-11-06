@@ -14,7 +14,7 @@ ul {
     white-space: nowrap;
 }
 
-ul li.uddersListItem{
+ul li.uddersListItem {
     border: thin;
     border-color: rgb(54, 54, 54);
     border-style: solid;
@@ -42,10 +42,6 @@ ul li.uddersListItem{
 
 .uddersListItem {
     color: white;
-}
-
-.uddersTitle {
-    padding-top: 20px;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -1,9 +1,9 @@
 import React from 'react';
-// import { BrowserRouter} from 'react-router-dom'
 import './index.css';
 import NavLeft from './components/NavLeft'
 import SearchRight from './components/SearchRight'
 import Home from './pages/Home'
+import WhatsHappeningPanel from './components/WhatsHappeningPanel';
 
 function App  () {
   return (
@@ -17,6 +17,7 @@ function App  () {
         </div>
         <div className = "rightPane">
           <SearchRight/>
+          <WhatsHappeningPanel/>
         </div>
       </div>
     </div>
