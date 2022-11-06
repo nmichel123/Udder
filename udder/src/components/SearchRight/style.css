@@ -2,12 +2,15 @@ input {
     border: none;
     border-radius: 20px;
     height: 40px;
-    margin-left: 60px;
+    margin-left: 0px;
     outline: none;
+    overflow: hidden;
     width: 100%;
 }
 
 .searchRight {
-    padding-top: 10px;
-    height: 10%
+    padding-top: 5px;
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
 }

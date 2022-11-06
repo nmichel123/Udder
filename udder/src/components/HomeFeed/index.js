@@ -1,5 +1,3 @@
-
-
 import React, {Component} from 'react'
 import UdderDataService from '../../services/udder.service'
 import './style.css'

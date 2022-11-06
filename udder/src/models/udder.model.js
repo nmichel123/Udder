@@ -11,5 +11,4 @@ module.exports = (sequelize, Sequelize) => {
     return Udder;
 }
 
-// Experiment with BLOB for passing user avi into the udders 
-// Find a way to upload an image passed as an avi & have that be passed into JSON for db
+//Fix avi issue

@@ -32,7 +32,7 @@
     height: 35px;
     margin-left: 80px;
     outline: none;
-    overflow: auto;
+    overflow: hidden;
     resize: none;
     width: 83%;
 }

@@ -6,6 +6,9 @@ import UdderDataService from '../../services/udder.service'
 
 
 class UdderHomePage extends React.Component {
+
+    //Constructor for storing state from udder text box
+
     constructor(props) {
         super(props);
 
@@ -18,6 +21,8 @@ class UdderHomePage extends React.Component {
         }
     }
 
+    //Resize text box 
+
     onChange (e) {
         var ta = document.querySelector('textarea');
         ta.style.display = 'none';
@@ -28,6 +33,8 @@ class UdderHomePage extends React.Component {
             udder: e.target.value
         })
     };
+
+    //Function to send udder JSON data to constructor
 
     sendUdder() {
         var data = {
@@ -46,6 +53,8 @@ class UdderHomePage extends React.Component {
                 console.log(e);
             });
     }
+
+    //Function to reset state after udder is sent
 
     newUdder() {
         this.setState({
