@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+const NewsAPI = process.env.REACT_APP_NEWS_API
 
 class NewsFeed extends React.Component {
     constructor(){
