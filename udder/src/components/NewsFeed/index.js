@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 
-const NewsAPI = process.env.REACT_APP_NewsAPI
 
 class NewsFeed extends React.Component {
     constructor(){
@@ -12,10 +11,15 @@ class NewsFeed extends React.Component {
     }
 
     componentDidMount () {
+<<<<<<< HEAD
         fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${NewsAPI}`)
         .then(res => res.json())
+=======
+        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${MY_KEY}`)
+        .then(res=> res.json())
+>>>>>>> parent of b708b92 (.env problem! Still unsolved....)
         .then((data) => {
-            this.setState({ news: data })
+            this.setState({ news: data})
         })
     .catch(console.log)
     }
