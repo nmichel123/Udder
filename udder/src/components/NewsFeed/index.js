@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+const NewsAPI = process.env.REACT_APP_NewsAPI
 
 class NewsFeed extends React.Component {
     constructor(){
@@ -11,10 +12,10 @@ class NewsFeed extends React.Component {
     }
 
     componentDidMount () {
-        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${MY_KEY}`)
+        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${NewsAPI}`)
         .then(res=> res.json())
         .then((data) => {
-            this.setState({ news: data})
+            this.setState({ news: data })
         })
     .catch(console.log)
     }
