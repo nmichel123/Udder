@@ -4,8 +4,8 @@ import './style.css';
 const NewsAPI = process.env.REACT_APP_NewsAPI
 
 class NewsFeed extends React.Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = {
             news: [],
         };
