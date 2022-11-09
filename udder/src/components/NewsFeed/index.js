@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import $ from 'jquery';
 
 const NewsAPI = process.env.REACT_APP_NEWS_API
 
@@ -20,10 +21,9 @@ class NewsFeed extends React.Component {
     .catch(console.log)
     }
     render() {
-        const {data} = this.state
         return (
             <div className='NewsBox'>
-                {data && data.map((articles) => (
+                {this.props.data.map((articles) => (
                     <div className='card'>
                         <div className='card-body'>
                             <h5 className='newsTitle'>{articles.title}</h5>
