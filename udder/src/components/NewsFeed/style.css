@@ -1,9 +1,17 @@
 .card {
     height:auto;
     width: auto;
+    background-color: aqua;
 }
 
 .NewsBox {
-    height: auto;
+    height: 300px;
     width: 100%;
+    background-color: #16181c;
 }
+
+/* .card {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+} */
