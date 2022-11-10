@@ -7,44 +7,38 @@ class NewsFeed extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            isLoaded: false,
             news: [],
         };
     }
 
-
-
     componentDidMount () {
-        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=557f4c9f7e9641c08f0c7d7370a671f0`)
+        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${NewsAPI}`)
         .then(res => res.json())
         .then((data) => {
+            console.log(data)
             this.setState({ 
-                isLoaded: true,
-                news: data.news 
+                news: data.news
             });
-            console.log(data.news)
         })
     .catch(e =>{
         console.log(e)
     })
     }
+
     render() {
         return (
             <div className='NewsBox'>
                 {this.state.news?.map((articles) => (
                     <div className='card'>
-                        <div className='card-body'>
+                        <div className='cardBody'>
                             <h5 className='newsTitle'>{articles.title}</h5>
                             <img src={articles.urlToImage} alt={articles.title} />
                         </div>
                     </div>
-                ))}
-
+                ))} 
             </div>
         );
     }
 }
 
 export default NewsFeed
-
-// Is fixed?
