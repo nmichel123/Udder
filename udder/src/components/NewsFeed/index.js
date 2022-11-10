@@ -7,7 +7,7 @@ class NewsFeed extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            news: [],
+            news: []
         };
     }
 
@@ -26,6 +26,7 @@ class NewsFeed extends React.Component {
     }
 
     render() {
+        if (this.state.articles === null) return null;
         return (
             <div className='NewsBox'>
                 {this.state.news?.map((articles) => (

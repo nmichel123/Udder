@@ -10,8 +10,6 @@
     background-color: #16181c;
 }
 
-.card {
-    background-color: white;
-    height: 30px;
-    width: 30px;
+p {
+    color: white;
 }
