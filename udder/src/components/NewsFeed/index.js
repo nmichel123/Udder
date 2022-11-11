@@ -32,7 +32,7 @@ class NewsFeed extends React.Component {
                     <div className='card'>
                         <div className='cardBody'>
                             <p className='newsTitle'>{articles.title}</p>
-                            {/* <img src={articles.urlToImage} alt={articles.title} /> */}
+                            <img src={articles.urlToImage} alt={articles.title} />
                         </div>
                     </div>
                 ))} 

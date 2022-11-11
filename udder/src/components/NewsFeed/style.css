@@ -4,6 +4,10 @@
     background-color: #16181c;
 }
 
+.cardBody {
+    display: flex;
+}
+
 .NewsBox {
     height: 300px;
     width: 100%;
@@ -12,12 +16,13 @@
 
 p {
     color: white;
-    font-weight: 900;
+    font-weight: 700;
     padding: 10px;
 }
 
 img {
-    height: auto;
-    width: auto;
-    align-items: flex-start;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    float: right;
 }
