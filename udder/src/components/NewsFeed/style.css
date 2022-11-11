@@ -1,7 +1,7 @@
 .card {
     height:auto;
     width: auto;
-    background-color: aqua;
+    background-color: #16181c;
 }
 
 .NewsBox {
@@ -12,4 +12,12 @@
 
 p {
     color: white;
+    font-weight: 900;
+    padding: 10px;
+}
+
+img {
+    height: auto;
+    width: auto;
+    align-items: flex-start;
 }
