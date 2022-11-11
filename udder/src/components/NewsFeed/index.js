@@ -17,7 +17,7 @@ class NewsFeed extends React.Component {
         .then((data) => {
             console.log(data)
             this.setState({ 
-                news: data.news
+                news: data.articles
             });
         })
     .catch(e =>{
@@ -26,14 +26,13 @@ class NewsFeed extends React.Component {
     }
 
     render() {
-        if (this.state.articles === null) return null;
         return (
             <div className='NewsBox'>
                 {this.state.news?.map((articles) => (
                     <div className='card'>
                         <div className='cardBody'>
                             <h5 className='newsTitle'>{articles.title}</h5>
-                            <img src={articles.urlToImage} alt={articles.title} />
+                            {/* <img src={articles.urlToImage} alt={articles.title} /> */}
                         </div>
                     </div>
                 ))} 
