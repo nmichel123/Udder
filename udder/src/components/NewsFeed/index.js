@@ -31,8 +31,10 @@ class NewsFeed extends React.Component {
                 {this.state.news?.map((articles) => (
                     <div className='card'>
                         <div className='cardBody'>
+                        <a className='imageLink' href={articles.url}>
                             <p className='newsTitle'>{articles.title}</p>
                             <img src={articles.urlToImage} alt={articles.title} />
+                        </a>
                         </div>
                     </div>
                 ))} 
