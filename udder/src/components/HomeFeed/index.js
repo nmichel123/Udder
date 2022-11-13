@@ -66,7 +66,8 @@ class HomeFeed extends Component {
                     { udders && udders.reverse().map((udder) => (
 
                         <li className={'uddersListItem'}>
-                        {udder.udder}
+                        {udder.udder} 
+                        <button className='likeBtn'></button>
                         </li>
 
                     ))}
