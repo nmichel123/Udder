@@ -12,7 +12,7 @@ class NewsFeed extends React.Component {
     }
 
     componentDidMount () {
-        fetch(`https://newsapi.org/v2/top-headlines?pageSize=6&country=us&apiKey=${NewsAPI}`)
+        fetch(`https://newsapi.org/v2/top-headlines?pageSize=7&country=us&apiKey=${NewsAPI}`)
         .then(res => res.json())
         .then((data) => {
             console.log(data)
