@@ -47,12 +47,12 @@ class HomeFeed extends Component {
 
     //Function to set udder as active once they are able to be interacted with
 
-    // setActiveUdder(udder, index) {
-    //     this.setState({
-    //         currentUdder: udder,
-    //         currentIndex: index
-    //     });
-    // }
+    setActiveUdder(udder, index) {
+        this.setState({
+            currentUdder: udder,
+            currentIndex: index
+        });
+    }
 
 
 
@@ -67,7 +67,6 @@ class HomeFeed extends Component {
 
                         <li className={'uddersListItem'}>
                         {udder.udder} 
-                        <button className='likeBtn'></button>
                         </li>
 
                     ))}
