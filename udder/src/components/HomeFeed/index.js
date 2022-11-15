@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import UdderDataService from '../../services/udder.service'
 import './style.css'
+import LikeButton from '../LikeButton';
 
 class HomeFeed extends Component {
     
@@ -67,6 +68,7 @@ class HomeFeed extends Component {
 
                         <li className={'uddersListItem'}>
                         {udder.udder} 
+                        <LikeButton/>
                         </li>
 
                     ))}
