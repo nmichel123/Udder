@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import UdderDataService from '../../services/udder.service'
 import './style.css'
 import LikeButton from '../LikeButton';
+import { FontAwesomeIcon } from '@fortawesome/free-solid-svg-icons'
 
 class HomeFeed extends Component {
     
