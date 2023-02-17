@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 class LikeButton extends Component {
     constructor(props){
@@ -29,9 +31,11 @@ class LikeButton extends Component {
 
     render(){
         return(
-            <div>
-                <button onClick={this.likeHandler}>Falalala</button>
-                <p>{this.state.likes}</p>
+            <div className='grid'>
+            <div className='likes'>
+                <FontAwesomeIcon className='likeIcon' icon={faHeart} onClick={this.likeHandler}/>
+                <p className="likeCount">{this.state.likes}</p>
+            </div>
             </div>
         )
     }

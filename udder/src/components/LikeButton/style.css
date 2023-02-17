@@ -1,0 +1,17 @@
+.like {
+    color: blue;
+}
+/* 
+.likeCount {
+    float: right;
+}
+
+.likeIcon {
+    float: right;
+} */
+
+.likes {
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+}
